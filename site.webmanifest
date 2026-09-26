@@ -1,0 +1,12 @@
+{
+  "name": "First Spin DJ Bootcamp",
+  "short_name": "First Spin",
+  "description": "No-cost, hands-on DJ education for youth and beginners in South Florida.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#052526",
+  "theme_color": "#052526",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" }
+  ]
+}

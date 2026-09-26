@@ -1,0 +1,8 @@
+# Netlify config for the First Spin DJ Bootcamp site.
+# In Netlify: set "Base directory" = firstspindjbootcamp so this file is picked up.
+# No build step — it's static HTML.
+[build]
+  publish = "."
+  command = ""
+
+# Pretty 404 + asset caching are also handled by _headers / 404.html.

@@ -1,0 +1,9 @@
+# Read by both Netlify and Cloudflare Pages (from the publish root).
+# Add old Carrd/legacy URLs here as → new page (301 = permanent).
+# Examples (edit/remove to match your real old URLs):
+/home            /             301
+/index.html      /             301
+/register        /#interest    301
+/donate.html     /donate/      301
+/miami           /miami-dj-bootcamp/     301
+/broward         /broward-dj-bootcamp/   301
