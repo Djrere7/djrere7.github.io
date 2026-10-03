@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-First Spin DJ Boot Camp — static page generator.
+First Spin DJ Bootcamp — static page generator.
 Emits the shared-chrome pages (header + body + footer) as plain static HTML.
 Run:  python3 build/generate.py   (from the site root)
 Home, Miami and Broward are authored by hand; this generates the rest.
@@ -18,7 +18,7 @@ HEADER = '''<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <div class="wrap">
     <nav class="nav" aria-label="Primary" data-open="false">
-      <a class="brand" href="/" aria-label="First Spin DJ Boot Camp — home"><img class="brand-logo" src="/img/firstspin-logo.png" width="987" height="1086" alt="First Spin DJ Boot Camp logo." /></a>
+      <a class="brand" href="/" aria-label="First Spin DJ Bootcamp — home"><img class="brand-logo" src="/img/firstspin-logo.png" width="987" height="1086" alt="First Spin DJ Bootcamp logo." /></a>
       <div class="nav-links" id="nav-links">
         <div class="nav-item">
           <a href="/summer-2027/" aria-haspopup="true">Summer 2027 <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
@@ -55,7 +55,7 @@ FOOTER = '''<footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="/" aria-label="First Spin DJ Boot Camp — home"><img class="brand-logo footer-logo" src="/img/firstspin-logo.png" width="987" height="1086" alt="First Spin DJ Boot Camp logo." /></a>
+        <a class="brand" href="/" aria-label="First Spin DJ Bootcamp — home"><img class="brand-logo footer-logo" src="/img/firstspin-logo.png" width="987" height="1086" alt="First Spin DJ Bootcamp logo." /></a>
         <p>Learn the Craft. Live the Culture. Free DJ education, mentorship and creative development for ages 7+ in South Florida. A nonprofit educational initiative of <a href="https://themixher.org" target="_blank" rel="noopener">MixHer Inc.</a>, a 501(c)(3) nonprofit organization.</p>
         <div class="footer-social" aria-label="Social media">
           <a href="https://www.instagram.com/FirstSpinDJBootcamp" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
@@ -71,10 +71,10 @@ FOOTER = '''<footer class="site-footer">
       <div><h4>Nonprofit Information</h4><dl><dt>Legal name</dt><dd>MixHer Inc.</dd><dt>EIN</dt><dd>99-1568393</dd><dt>Status</dt><dd>501(c)(3) tax-exempt nonprofit organization</dd><dt>Website</dt><dd><a href="https://themixher.org" target="_blank" rel="noopener">TheMixHer.org</a></dd><dt>Address</dt><dd>1000 5th St, Suite 200 Y8, Miami Beach, FL 33139</dd></dl></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span data-year>2027</span> First Spin DJ Boot Camp / MixHer Inc.</span>
+      <span>&copy; <span data-year>2027</span> First Spin DJ Bootcamp / MixHer Inc.</span>
       <div class="links"><a href="/privacy/">Privacy Policy</a><a href="/accessibility/">Accessibility</a><a href="/donate/">Donation Information</a><a href="/contact/">Contact</a></div>
     </div>
-    <p class="disclosure">First Spin DJ Boot Camp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. Contributions to MixHer Inc. designated for First Spin DJ Boot Camp are tax-deductible to the extent permitted by law. Please consult your tax adviser regarding your individual circumstances.</p>
+    <p class="disclosure">First Spin DJ Bootcamp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. Contributions to MixHer Inc. designated for First Spin DJ Bootcamp are tax-deductible to the extent permitted by law. Please consult your tax adviser regarding your individual circumstances.</p>
   </div>
 </footer>'''
 
@@ -90,7 +90,7 @@ def page(path, title, desc, body, canonical, extra_head="", data_page="", robots
 <link rel="canonical" href="{canonical}" />
 <meta name="theme-color" content="#02090A" />{robots_tag}
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="First Spin DJ Boot Camp" />
+<meta property="og:site_name" content="First Spin DJ Bootcamp" />
 <meta property="og:title" content="{html.escape(title, quote=True)}" />
 <meta property="og:description" content="{html.escape(desc, quote=True)}" />
 <meta property="og:url" content="{canonical}" />
@@ -155,7 +155,7 @@ INTEREST_BTN = '<a class="btn btn-primary btn-lg" href="/#interest" data-cta="in
 # ---- Summer 2027 ----
 summer_body = crumbs([("Home","/"),("Summer 2027",None)]) + hero(
   "Summer 2027",
-  'First Spin DJ Boot Camp &mdash; <span class="hl">Summer 2027</span>',
+  'First Spin DJ Bootcamp &mdash; <span class="hl">Summer 2027</span>',
   "Seven weeks of music, creativity, confidence &amp; culture. First Spin returns in Summer 2027 serving families in both Miami-Dade and Broward County. The free seven-week experience gives students ages 7+ hands-on access to DJ education, mentorship, entrepreneurship and live performance.",
   INTEREST_BTN.format(loc="summer-hero") + '<a class="btn btn-ghost" href="/host/" data-track="host_click" data-track-loc="summer-hero">Help Us Secure a Location</a>',
   pills=["Summer 2027 · June–August","Miami-Dade & Broward County"]
@@ -192,8 +192,8 @@ summer_body = crumbs([("Home","/"),("Summer 2027",None)]) + hero(
 <div class="btn-row"><a class="btn btn-primary btn-lg" href="/#interest" data-cta="interest" data-track-loc="summer-final">Join the 2027 Priority Interest List</a></div>
 </div></section>'''
 page("summer-2027/index.html",
-     "First Spin DJ Boot Camp — Summer 2027 | Free Youth DJ Program",
-     "First Spin DJ Boot Camp returns Summer 2027 (June–August) with a free seven-week DJ program for ages 7+ in Miami-Dade and Broward County. Join the 2027 priority interest list.",
+     "First Spin DJ Bootcamp — Summer 2027 | Free Youth DJ Program",
+     "First Spin DJ Bootcamp returns Summer 2027 (June–August) with a free seven-week DJ program for ages 7+ in Miami-Dade and Broward County. Join the 2027 priority interest list.",
      summer_body, "https://firstspindjbootcamp.org/summer-2027/", data_page="summer")
 
 # ---- For Parents ----
@@ -256,7 +256,7 @@ parents_body = crumbs([("Home","/"),("For Parents",None)]) + hero(
 </div></section>'''
 page("for-parents/index.html",
      "Youth DJ Summer Program for Teens | Parent Info | First Spin",
-     "Learn what parents should know about First Spin DJ Boot Camp, a free seven-week summer DJ program for ages 7+ in Miami-Dade and Broward County.",
+     "Learn what parents should know about First Spin DJ Bootcamp, a free seven-week summer DJ program for ages 7+ in Miami-Dade and Broward County.",
      parents_body, "https://firstspindjbootcamp.org/for-parents/", data_page="parents")
 
 # ---- Impact ----
@@ -288,7 +288,7 @@ impact_body = crumbs([("Home","/"),("Our Impact",None)]) + hero(
 </div></section>'''
 page("impact/index.html",
      "Our Impact | Youth DJ Education in South Florida | First Spin",
-     "First Spin DJ Boot Camp builds creative confidence, technology skills and entrepreneurial thinking for South Florida youth. See our growth and 2027 goals.",
+     "First Spin DJ Bootcamp builds creative confidence, technology skills and entrepreneurial thinking for South Florida youth. See our growth and 2027 goals.",
      impact_body, "https://firstspindjbootcamp.org/impact/", data_page="impact")
 
 # ---- About ----
@@ -311,12 +311,12 @@ about_body = crumbs([("Home","/"),("About",None)]) + hero(
 <section class="section-teal reveal"><div class="wrap" style="max-width:820px">
 <span class="eyebrow on-dark">Our Nonprofit Home</span>
 <h2 class="section-title" style="color:#fff">Powered by <span class="accent-t">MixHer Inc.</span></h2>
-<p class="lede">First Spin DJ Boot Camp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. Through MixHer Inc., First Spin combines music education, mentorship, entrepreneurship and community engagement to create greater access to the creative industries.</p>
+<p class="lede">First Spin DJ Bootcamp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. Through MixHer Inc., First Spin combines music education, mentorship, entrepreneurship and community engagement to create greater access to the creative industries.</p>
 <div class="btn-row" style="margin-top:1.4rem"><a class="btn btn-teal" href="https://themixher.org" target="_blank" rel="noopener">Visit TheMixHer.org</a><a class="btn btn-ghost" href="/impact/">See Our Impact</a></div>
 </div></section>'''
 page("about/index.html",
-     "About First Spin DJ Boot Camp | Free Youth DJ Education",
-     "First Spin DJ Boot Camp is a nonprofit educational initiative of MixHer Inc. (501(c)(3)) providing free DJ education, mentorship and creative opportunity for South Florida youth.",
+     "About First Spin DJ Bootcamp | Free Youth DJ Education",
+     "First Spin DJ Bootcamp is a nonprofit educational initiative of MixHer Inc. (501(c)(3)) providing free DJ education, mentorship and creative opportunity for South Florida youth.",
      about_body, "https://firstspindjbootcamp.org/about/", data_page="about")
 
 # ---- Sponsors & Partners ----
@@ -414,7 +414,7 @@ sponsor_body = crumbs([("Home","/"),("Sponsors & Partners",None)]) + hero(
 </div></section>'''
 page("sponsors/index.html",
      "Sponsor Youth Music Education in South Florida | First Spin",
-     "Partner with First Spin DJ Boot Camp to fund instructors, program operations, studio space and free youth DJ education in Miami-Dade and Broward County.",
+     "Partner with First Spin DJ Bootcamp to fund instructors, program operations, studio space and free youth DJ education in Miami-Dade and Broward County.",
      sponsor_body, "https://firstspindjbootcamp.org/sponsors/", data_page="sponsors")
 
 # ---- Donate ----
@@ -435,7 +435,7 @@ donate_body = crumbs([("Home","/"),("Donate",None)]) + hero(
   '<a class="btn btn-primary btn-lg" href="#" data-cta="donate" data-track-loc="donate-hero">Donate to First Spin</a><a class="btn btn-ghost" href="#monthly" data-track="monthly_click" data-track-loc="donate-hero">Give Monthly</a>'
 ) + f'''
 <section class="section-cream reveal"><div class="wrap" style="max-width:840px">
-<p class="lede">First Spin DJ Boot Camp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. <strong>Contributions to MixHer Inc. designated for First Spin DJ Boot Camp are tax-deductible to the extent permitted by law.</strong></p>
+<p class="lede">First Spin DJ Bootcamp is a nonprofit educational initiative of MixHer Inc., a 501(c)(3) nonprofit organization. <strong>Contributions to MixHer Inc. designated for First Spin DJ Bootcamp are tax-deductible to the extent permitted by law.</strong></p>
 </div></section>
 <section class="section-cream reveal" style="background:linear-gradient(180deg,#eafaf8,var(--cream))"><div class="wrap">
 <span class="eyebrow">Where Your Gift Goes</span>
@@ -443,7 +443,7 @@ donate_body = crumbs([("Home","/"),("Donate",None)]) + hero(
 {gift_html}
 <div class="parent-callout" style="margin-top:1.8rem;max-width:820px"><h3>Give Where It Matters Most</h3><p>Unrestricted gifts give First Spin the flexibility to direct funding toward the most important needs at the time of your donation. You may also designate: Instructor &amp; Mentor Fund, Miami Program, Broward Program, Student Showcase, or Technology.</p></div>
 <div class="btn-row" style="margin-top:1.6rem"><a class="btn btn-primary btn-lg" href="#" data-cta="donate" data-track-loc="donate-mid">Donate to First Spin</a></div>
-<p class="loc-note" style="font-size:.86rem">Donations are processed through MixHer Inc. and may be designated for First Spin DJ Boot Camp.</p>
+<p class="loc-note" style="font-size:.86rem">Donations are processed through MixHer Inc. and may be designated for First Spin DJ Bootcamp.</p>
 </div></section>
 <section id="monthly" class="section-teal reveal"><div class="wrap" style="max-width:820px">
 <span class="eyebrow on-dark">Monthly Giving</span>
@@ -452,7 +452,7 @@ donate_body = crumbs([("Home","/"),("Donate",None)]) + hero(
 <div class="btn-row" style="margin-top:1.2rem"><a class="btn btn-teal" href="#" data-cta="donate" data-track-loc="donate-monthly">Become a Monthly Donor</a></div>
 </div></section>'''
 page("donate/index.html",
-     "Donate to Free Youth DJ Education | First Spin DJ Boot Camp",
+     "Donate to Free Youth DJ Education | First Spin DJ Bootcamp",
      "Help keep First Spin free for families. Donate through MixHer Inc. to support instructors, program operations, studio space and creative education for South Florida youth.",
      donate_body, "https://firstspindjbootcamp.org/donate/", data_page="donate")
 
@@ -510,7 +510,7 @@ host_body = crumbs([("Home","/"),("Host First Spin",None)]) + hero(
 </div></section>'''
 page("host/index.html",
      "Host a Youth DJ Program in Miami or Broward | First Spin",
-     "Have a studio, classroom or community space? Help First Spin DJ Boot Camp provide free youth DJ education in Miami-Dade or Broward County in Summer 2027.",
+     "Have a studio, classroom or community space? Help First Spin DJ Bootcamp provide free youth DJ education in Miami-Dade or Broward County in Summer 2027.",
      host_body, "https://firstspindjbootcamp.org/host/", data_page="host")
 
 # ---- Contact ----
@@ -547,13 +547,13 @@ contact_body = crumbs([("Home","/"),("Contact",None)]) + hero(
 </div>
 </div></section>'''
 page("contact/index.html",
-     "Contact First Spin DJ Boot Camp | Parents, Sponsors &amp; Venues",
-     "Contact First Spin DJ Boot Camp — join the 2027 interest list, become a sponsor, offer a venue, or send a message. Serving Miami-Dade and Broward County.",
+     "Contact First Spin DJ Bootcamp | Parents, Sponsors &amp; Venues",
+     "Contact First Spin DJ Bootcamp — join the 2027 interest list, become a sponsor, offer a venue, or send a message. Serving Miami-Dade and Broward County.",
      contact_body, "https://firstspindjbootcamp.org/contact/", data_page="contact")
 
 # ---- News & Resources ----
 news_cats = [
- ("For Parents",["What Parents Should Know Before Their Child's First DJ Class","What Does a Child Actually Learn in DJ Boot Camp?","How DJing Can Help Young People Build Confidence","How First Spin Keeps Parents Connected Throughout the Summer"]),
+ ("For Parents",["What Parents Should Know Before Their Child's First DJ Class","What Does a Child Actually Learn in DJ Bootcamp?","How DJing Can Help Young People Build Confidence","How First Spin Keeps Parents Connected Throughout the Summer"]),
  ("DJ Education",["What Is Beatmatching? A Beginner-Friendly Explanation","How DJs Build Playlists","Why Learning Song Structure Matters","What Does a DJ Controller Actually Do?"]),
  ("Entrepreneurship",["Why First Spin Teaches Business Alongside DJ Skills","What Young DJs Can Learn About Branding","How Creative Skills Can Become Career Skills"]),
  ("Community Impact",["Why Access to Creative Technology Matters","The Role of Mentorship in Youth Music Programs","How Businesses Can Support Youth Arts Education in Miami","How Broward Organizations Can Invest in Young Creatives"]),
@@ -576,14 +576,14 @@ news_body = crumbs([("Home","/"),("News & Resources",None)]) + hero(
 </div></section>'''
 page("news/index.html",
      "First Spin News, Stories &amp; Resources | DJ Education",
-     "First Spin DJ Boot Camp news, parent resources, DJ education explainers and community stories from South Florida. Follow along and join the email community.",
+     "First Spin DJ Bootcamp news, parent resources, DJ education explainers and community stories from South Florida. Follow along and join the email community.",
      news_body, "https://firstspindjbootcamp.org/news/", data_page="news")
 
 # ---- Thank You ----
 ty_body = '''<section class="hero has-art" aria-labelledby="h1"><div class="wrap"><div class="hero-copy" style="max-width:760px">
 <span class="hero-badge"><span class="dot"></span> Confirmed</span>
 <h1 id="h1">You&rsquo;re on the <span class="hl">List!</span></h1>
-<p class="lede">Thanks for your interest in First Spin DJ Boot Camp. We're excited to keep you updated as we prepare for Summer 2027. You should receive a welcome email shortly — please add First Spin to your contacts so our updates don't end up in spam.</p>
+<p class="lede">Thanks for your interest in First Spin DJ Bootcamp. We're excited to keep you updated as we prepare for Summer 2027. You should receive a welcome email shortly — please add First Spin to your contacts so our updates don't end up in spam.</p>
 <div class="hero-cta btn-row"><a class="btn btn-primary btn-lg" href="https://www.instagram.com/FirstSpinDJBootcamp" target="_blank" rel="noopener">Follow First Spin</a><a class="btn btn-ghost" href="/summer-2027/">Explore the Program</a></div>
 </div></div></section>
 <section class="section-cream reveal"><div class="wrap" style="max-width:760px">
@@ -593,8 +593,8 @@ ty_body = '''<section class="hero has-art" aria-labelledby="h1"><div class="wrap
 "Miami-Dade and Broward location updates","Program dates","Registration information","First Spin news &amp; community events","Student stories &amp; important parent information"]) + '''</ul>
 </div></section>'''
 page("thank-you/index.html",
-     "You're on the List | First Spin DJ Boot Camp",
-     "Thanks for joining the First Spin DJ Boot Camp 2027 interest list. Watch for a welcome email with Summer 2027 updates for Miami-Dade and Broward County.",
+     "You're on the List | First Spin DJ Bootcamp",
+     "Thanks for joining the First Spin DJ Bootcamp 2027 interest list. Watch for a welcome email with Summer 2027 updates for Miami-Dade and Broward County.",
      ty_body, "https://firstspindjbootcamp.org/thank-you/", data_page="thankyou", robots="noindex,follow")
 
 # ---- Privacy ----
@@ -602,7 +602,7 @@ priv_body = crumbs([("Home","/"),("Privacy Policy",None)]) + '''<main></main>
 <section class="section-cream"><div class="wrap" style="max-width:820px">
 <span class="eyebrow">Privacy</span>
 <h2 class="section-title">Privacy <span class="accent">Policy</span></h2>
-<p class="lede">First Spin DJ Boot Camp (a nonprofit educational initiative of MixHer Inc.) respects your privacy. This site is designed primarily for parents and adults.</p>
+<p class="lede">First Spin DJ Bootcamp (a nonprofit educational initiative of MixHer Inc.) respects your privacy. This site is designed primarily for parents and adults.</p>
 <p><strong>Who submits information.</strong> Parents and guardians complete interest forms and registration on behalf of minors. Children do not create website accounts.</p>
 <p><strong>What we collect.</strong> Our public interest form intentionally collects only what we need to follow up: parent/guardian name, email, phone, participant age, city, ZIP code and preferred program area, plus an optional note about how you heard about us. Additional information required for enrollment is collected later through our approved parent enrollment process.</p>
 <p><strong>How we use it.</strong> To send program announcements, location and registration updates, and monthly First Spin news. We do not sell your information, and we do not publicly display parent contact details, private group links or student information.</p>
@@ -610,8 +610,8 @@ priv_body = crumbs([("Home","/"),("Privacy Policy",None)]) + '''<main></main>
 <p><strong>Questions.</strong> Contact <a href="mailto:FirstSpinDJBootcamp@gmail.com" style="color:var(--orange-deep);font-weight:700">FirstSpinDJBootcamp@gmail.com</a>.</p>
 <p class="loc-note" style="font-size:.85rem">This summary is provided for transparency and is not legal advice. First Spin will publish a full policy as the program formalizes.</p>
 </div></section>'''
-page("privacy/index.html","Privacy Policy | First Spin DJ Boot Camp",
-     "How First Spin DJ Boot Camp (MixHer Inc.) collects and uses information. Parents complete forms for minors; we never sell data or expose contact details.",
+page("privacy/index.html","Privacy Policy | First Spin DJ Bootcamp",
+     "How First Spin DJ Bootcamp (MixHer Inc.) collects and uses information. Parents complete forms for minors; we never sell data or expose contact details.",
      priv_body, "https://firstspindjbootcamp.org/privacy/", data_page="privacy")
 
 # ---- Accessibility ----
@@ -619,15 +619,15 @@ acc_body = crumbs([("Home","/"),("Accessibility",None)]) + '''<main></main>
 <section class="section-cream"><div class="wrap" style="max-width:820px">
 <span class="eyebrow">Accessibility</span>
 <h2 class="section-title">Accessibility <span class="accent">Statement</span></h2>
-<p class="lede">First Spin DJ Boot Camp is committed to making this website usable for everyone, and we work toward WCAG 2.1 AA best practices.</p>
+<p class="lede">First Spin DJ Bootcamp is committed to making this website usable for everyone, and we work toward WCAG 2.1 AA best practices.</p>
 <ul class="check-list">''' + check_items([
 "Semantic HTML with a clear heading structure","Keyboard-operable navigation and visible focus states",
 "Color choices reviewed for contrast","Descriptive alternative text for meaningful images",
 "Labeled form fields and descriptive buttons","Reduced-motion support for animations"]) + '''</ul>
 <p style="margin-top:1.2rem">If you encounter an accessibility barrier, please tell us at <a href="mailto:FirstSpinDJBootcamp@gmail.com" style="color:var(--orange-deep);font-weight:700">FirstSpinDJBootcamp@gmail.com</a> and we'll work to fix it.</p>
 </div></section>'''
-page("accessibility/index.html","Accessibility | First Spin DJ Boot Camp",
-     "First Spin DJ Boot Camp is committed to WCAG 2.1 AA accessibility best practices. Report barriers to FirstSpinDJBootcamp@gmail.com.",
+page("accessibility/index.html","Accessibility | First Spin DJ Bootcamp",
+     "First Spin DJ Bootcamp is committed to WCAG 2.1 AA accessibility best practices. Report barriers to FirstSpinDJBootcamp@gmail.com.",
      acc_body, "https://firstspindjbootcamp.org/accessibility/", data_page="accessibility")
 
 # ---- 404 ----
@@ -637,8 +637,8 @@ notfound_body = '''<section class="hero has-art" style="min-height:60vh;display:
 <p class="lede">We couldn't find that page. Let's get you back to the mix.</p>
 <div class="hero-cta btn-row"><a class="btn btn-primary btn-lg" href="/">Back to Home</a><a class="btn btn-ghost" href="/#interest" data-cta="interest">Join the 2027 Interest List</a></div>
 </div></div></section>'''
-page("404.html","Page Not Found | First Spin DJ Boot Camp",
-     "The page you're looking for isn't here. Head back to First Spin DJ Boot Camp.",
+page("404.html","Page Not Found | First Spin DJ Bootcamp",
+     "The page you're looking for isn't here. Head back to First Spin DJ Bootcamp.",
      notfound_body, "https://firstspindjbootcamp.org/404.html", data_page="404", robots="noindex,follow")
 
 print("done.")
